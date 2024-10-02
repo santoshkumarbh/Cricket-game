@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cricket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="text">Bat Ball Stump Game</h1>
+   <button onclick="
+    let computerChoice;
+    let choice;
+    let result;
+    let randomnum;
+     randomnum=Math.random()*3;
+    if(randomnum>=0 && randomnum<=1){
+      choice='Bat';
+    }else if(randomnum>=1 && randomnum<=2){
+     choice='Boll';
+    }else{
+      choice='Stump';
+    }
+    console.log(`Computer choice is ${choice}`);
+    if(choice==='Bat'){
+       result=`It's a tie `;
+    }else if(choice==='Boll'){
+      result='User won the match';
+    }else{
+      result='Computer won the match';
+    }
+    alert(`your choice is Bat and Computer choice is ${choice} and finally ${result}`);
+  ">Bat</button>
+
+  <button  onclick="
+   randomnum=Math.random()*3;
+  if(randomnum>=0 && randomnum<=1){
+    choice='Bat';
+  }else if(randomnum>=1 && randomnum<=2){
+   choice='Boll';
+  }else{
+    choice='Stump';
+  }
+
+  if(choice==='Boll'){
+     result=`It's a tie `;
+  }else if(choice==='Stump'){
+    result='User won the match';
+  }else{
+    result='Computer won the match';
+  }
+  alert(`your choice is Boll and Computer choice is ${choice} and finally ${result}`);
+">Boll</button>
+  <button  onclick="
+   randomnum=Math.random()*3;
+  if(randomnum>=0 && randomnum<=1){
+    choice='Bat';
+  }else if(randomnum>=1 && randomnum<=2){
+   choice='Boll';
+  }else{
+    choice='Stump';
+  }
+  console.log(`Computer choice is ${choice}`);
+  if(choice==='Stump'){
+     result=`It's a tie `;
+  }else if(choice==='Bat'){
+    result='User won the match';
+  }else{
+    result='Computer won the match';
+  }
+  alert(`your choice is Stump and Computer choice is ${choice} and finally ${result}`);
+">Stump</button>
+</body>
+</html>
